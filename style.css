@@ -1,0 +1,94 @@
+
+* {
+    transition: all 0.25s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  body {
+    background: #bc68e8ec;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Helvetica', Arial, Helvetica, sans-serif;
+  }
+  p {
+    font-family: 'Open Sans', cursive;
+  }
+  .head-logo{
+    height: 5em;
+  }
+  
+.hgroup {
+    margin-bottom: 1.5em;
+}
+.title {
+    font-size: 2.25em;
+    line-height: 1.33333333;
+}
+  .card {
+    background: #fdfdfd;
+    border-radius: 4px;
+    height: 96vh;
+    width: 80vw;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.50), 0 3px 6px rgba(0, 0, 0, 0.50);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin-top: 1rem;
+    overflow: hidden;
+  }
+  .card2{
+    background: #fdfdfd;
+    border-radius: 4px;
+    height: 96vh;
+    width: 80vw;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.50), 0 3px 6px rgba(0, 0, 0, 0.50);
+    text-align: justify;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: safe;
+    padding: 3em;
+    overflow: hidden;
+  }
+  
+  @media only screen and (min-width: 1000px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 100%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  @media only screen and (max-height: 640px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 100%;
+      max-width: 50vw;
+      max-height: unset;
+    }
+  }
+  
+  img.birthday {
+    max-height: 40vh;
+  }
+  
+  .text {
+    padding: 1em;
+  }
+  
+  .muted {
+    opacity: 0.8;
+  }
+  
+  .space {
+    height: 100px;
+  }
